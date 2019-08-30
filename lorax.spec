@@ -3,8 +3,8 @@
 %define debug_package %{nil}
 
 Name:           lorax
-Version:        28.14.23.1
-Release:        7%{?dist}
+Version:        28.14.23.2
+Release:        1%{?dist}
 Summary:        Tool for creating the anaconda install images
 
 Group:          Applications/System
@@ -249,6 +249,11 @@ getent passwd weldr >/dev/null 2>&1 || useradd -r -g weldr -d / -s /sbin/nologin
 %{_sysconfdir}/bash_completion.d/composer-cli
 
 %changelog
+* Fri Aug 30 2019 Greg Turner <gmt@be-evil.net> 28.14.23.2-1
+- oops, still a dash in the version here. (gmt) (gmt)
+- .spec: revbump since I cant figure out how to use dnf (gmt) (gmt)
+- creator.py: include dmsquash-live-ntfs by default (gmt) (gmt)
+
 * Tue May 28 2019 Brian C. Lane <bcl@redhat.com> 28.14.23-7
 - tests: Make it easier to update version globs (bcl)
   Related: rhbz#171282
