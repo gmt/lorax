@@ -3,7 +3,7 @@
 %define debug_package %{nil}
 
 Name:           lorax
-Version:        30.19.1
+Version:        30.19.2
 Release:        1%{?dist}
 Summary:        Tool for creating the anaconda install images
 
@@ -241,6 +241,9 @@ getent passwd weldr >/dev/null 2>&1 || useradd -r -g weldr -d / -s /sbin/nologin
 %{_mandir}/man1/composer-cli.1*
 
 %changelog
+* Fri Aug 30 2019 Greg Turner <gmt@be-evil.net> 30.19.2-1
+- new package built with tito
+
 * Mon May 06 2019 Brian C. Lane <bcl@redhat.com> 30.19-1
 - New lorax documentation - 30.19 (bcl@redhat.com)
 - Replace isoinfo with pycdlib (bcl@redhat.com)
