@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 
 Name:           lorax
-Version:        19.7.25.1
+Version:        19.7.25.2
 Release:        1%{?dist}
 Summary:        Tool for creating the anaconda install images
 
@@ -120,6 +120,11 @@ rm -f $RPM_BUILD_ROOT/%{_tmpfilesdir}/lorax-composer.conf
 %{_tmpfilesdir}/lorax.conf
 
 %changelog
+* Fri Aug 30 2019 Greg Turner <gmt@be-evil.net> 19.7.25.2-1
+- .spec: ok no dashes allowed (gmt) (gmt)
+- .spec: revbump since I cant figure out how dnf works (gmt) (gmt)
+- creator.py: include dmsquash-live-ntfs by default (gmt) (gmt)
+
 * Tue Jun 04 2019 Brian C. Lane <bcl@redhat.com> 19.7.25-1
 - lorax: Add --rootfs-size (bcl)
   Resolves: rhbz#1715116
