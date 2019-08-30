@@ -3,7 +3,7 @@
 %define debug_package %{nil}
 
 Name:           lorax
-Version:        28.14.30.2
+Version:        28.14.30.3
 Release:        1%{?dist}
 Summary:        Tool for creating the anaconda install images
 
@@ -251,6 +251,9 @@ getent passwd weldr >/dev/null 2>&1 || useradd -r -g weldr -d / -s /sbin/nologin
 %{_sysconfdir}/bash_completion.d/composer-cli
 
 %changelog
+* Fri Aug 30 2019 Greg Turner <gmt@be-evil.net> 28.14.30.3-1
+- 
+
 * Fri Aug 30 2019 Unknown name 28.14.30.2-1
 - .spec: ok no dashes allowed (gmt) (gmt)
 - .spec: revbump since I cant figure out how dnf works (gmt) (gmt)
